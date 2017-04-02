@@ -1,0 +1,85 @@
+<!doctype html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="images1/recicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>CLOUD CAMPUS:Service at Your Doorsteps</title><meta name="keywords" content="Rajalakshmi Engineering College, REC, Chennai, Education, Institution, engineering college, Self Financing, Top Engineering Colleges, Engineering Colleges Chennai, Top Engineering College Chennai, Engineering College near to Chennai, Engineering College near Chennai, Research, College, IT courses, Electrical, Electronics, Mechanical, Biomedical, Biotechnology, Automobile, Aeronautical, Power systems, Communication system, Communication, CAD/CAM, Information Technology, Students, Workshop, FDP, Seminar, Education, Engineering students, Teaching, reputed college in Chennai, professional courses, UG, PG, Research, Research in Chennai, Consultancy in Chennai, Research and Consultancy, Research and Consultancy in Chennai, BE, BTech, ME, M.E., MBA, MCA, ECE, CSE, Civil, EEE, Mech, IT, Aero, Auto, BME, BioTech, Engineering Colleges in Chennai, B.Tech, B.E, EEE, Top Engineering College in South India, Best Engineering College in Chennai, number one engineering college in chennai, engineering college in Chennai, 10 engineering colleges, engineering institutes in india, Colleges in Chennai, List out top 10 engineering college in chennai, number one engineering college in India, technical engineering colleges, top 10 engineering college in India, top 10 engineering courses in India, Top 10 Engineering Colleges, top 10 private engineering colleges in India, top 50 engineering college in India, top colleges in India,  top ranked Engineering in India, top ranking engineering colleges, top ten engineering in India, world class education, medical and health sciences, engineering and technology, management, science and humanities, Humanities and Science, ME CAD/CAM ,MBA, MCA, Management courses in Chennai, M.E. Power Electronics & Drives, M.E. Software, embedded systems, ME embedded System, Professional Courses in Chennai, Professional Courses in Tamilnadu, IBM, IBM Software Centre of Excellence, IBM CoE, CoE, Centre of Excellence, Placement, Institute of Excellence, Institution of Excellence, Quality Education, Technical Education"/><meta name="description" content="Rajalakshmi Engineering College is the No. 1 Self Financing Engineering College in Chennai. REC is one of the Top 10 Engineering Colleges in Chennai, Tamilnadu." /><meta name="ROBOTS" content="ALL" /><meta name="copyright" content="Copyright. REC.2011" /><meta name="author" content="REC" /><meta name="Distribution" content="Global" /><meta name="city" content="Chennai" /><meta name="State" content="Tamilnadu" /><meta name="country" content="India" /><meta name="language" content="English" /><meta name="classification" content="Engineering College" /><meta name="Rating" content="General" /><meta name="Robots" content="INDEX,FOLLOW" /><meta name="Revisit-after" content="1 Day" /><meta http-equiv="X-UA-Compatible" content="mozilla firefox" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link href="css1/default.css" rel="stylesheet" type="text/css" media="screen">
+		<!--<link href="css1/style.css" rel="stylesheet" type="text/css" />-->
+		<!--[if IE]><script src="js/HTML5forIE.js"></script><![endif]-->
+		<script src="js/imghoverani-jquery-1.3.2.min.js" type="text/javascript"></script> <!-- Main Big Images - Hover Effect - Related Script - Starts -->
+		<script type="text/javascript">        	
+		$(document).ready(function(){
+		
+			//Set opacity on each span to 0%
+			$(".rollover").css({'opacity':'0'});
+		
+			$('.img_list a').hover(
+				function() {
+					$(this).find('.rollover').stop().fadeTo(500, 1);
+				},
+				function() {
+					$(this).find('.rollover').stop().fadeTo(500, 0);
+				}
+			)
+		
+		});		
+		</script>		<!-- Main Big Images - Hover Effect - Related Script - Ends -->
+	</head>
+	<body class="home-outer-bg">
+		<div id="site-holder-shadow">		<!-- Site Holder Shadow Box  -->
+		<div id="site-holder" class="home">		<!-- Site Holder -->
+					<div id="logo">				<!-- Main Logo -->
+						<img src="images1/rec-logo-home1.png" alt="Cloud Campus" width="280" height="100">					</div>
+						<div id="main-nav">				<!-- Main Menu Starts -->
+							
+						</div>							<!-- Main Menu Ends -->
+					
+					
+					<div id="social-nav">		<!-- Facebook, Twitter Logos -->
+						
+						<a href="http://twitter.com" target="_blank"><img src="images1/twitter-logo.png" alt="twitter" width="28" height="28" border="none"></a>					
+					</div>
+
+
+				
+
+					<div id="bigimgnav1">			<!-- Main Content -->
+						<ul class="img_list">
+							<li class="image_1"><a href="http://192.168.6.76/opensis"><span class="rollover"></span><img src="images1/home-big-imgs-01.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+					</div>
+					<div id="bigimgnav2">
+						<ul class="img_list">
+							<li class="image_2"><a href="#"><span class="rollover"></span><img src="images1/home-big-imgs-02.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+					</div>
+					<div id="bigimgnav3">
+						<ul class="img_list">
+							<li class="image_3"><a href="downloads/RECRank2011.pdf"><span class="rollover"></span><img src="images1/home-big-imgs-03.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+</div>
+					<div id="bigimgnav4">
+						<ul class="img_list">
+							<li class="image_4"><a href="http://www.youtube.com/education"><span class="rollover"></span><img src="images1/home-big-imgs-04.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+					</div>
+					<div id="bigimgnav5">
+						<ul class="img_list">
+							<li class="image_5"><a href="http://192.168.168.1/websql"><span class="rollover"></span><img src="images1/home-big-imgs-05.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+					</div>
+					<div id="bigimgnav6">
+						<ul class="img_list">
+							<li class="image_6"><a href="file:///C:/Documents and Settings/Administrator/Desktop/cloud/social.html"><span class="rollover"></span><img src="images1/home-big-imgs-06.jpg" alt="" width="324" height="154" /></a></li>
+						</ul>
+					</div>			<!-- Main Content Ends-->
+
+
+
+		</div>					<!-- Site Holder Ends -->
+
+		</div>					<!-- Site Holder Shadow Box (#site-holder-shadow) Ends -->
+
+	</body>
+</html>

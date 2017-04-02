@@ -1,0 +1,945 @@
+/* CSS2 Document */
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+
+# default styles
+
+File name:		default.css
+Site:			Cloud Campus (v1.0-Mar 2012)
+Version:		1.0
+Last change:	01.05.2012
+Author:			d5studios.com
+Description:	common styles to be applied to all the pages in the site
+
+---------------------------------------------------------------------------------
+
+# Table of content (TOC)
+
+* Color Glossary
+* Font Glossary
+* HTML Selectors (Defaults)
+	** Body
+	** Headings
+* Content
+* Header
+	** Navigation
+	** Content
+		*** Article
+		*** Aside
+* Footer
+	** Navigation
+---------------------------------------------------------------------------------
+
+# Color Glossary
+white (body-text-color): rgb(255,255,255);
+lighter pink: #a089ad;
+pink: rgb(25,76,134)/ #6b3787
+dark pink: #5a2e71
+darker pink: #49255d
+lighter sandal: #ddd1b1;
+sandal1: #cdc09e
+sandal2: #ded5bf
+
+---------------------------------------------------------------------------------
+
+# Font Glossary
+
+heading: "Myriad Pro", sans-serif;
+body text: Arial, sans-serif;
+
+--------------------------------------------------------------------------------- */
+
+/* reset */
+* {
+margin: 0;
+padding: 0;
+}
+
+@font-face{font-family: 'Category Title Font'; src: url('../fonts/caslon-540.ttf'); font-weight: normal; font-style: normal; font-variant: normal;}
+@font-face{font-family: 'Category Title Font Italic'; src: url('../fonts/Caslon540ITALIC.ttf'); font-weight: normal; font-style: italic; font-variant: normal}
+
+/* HTML Selectors (Defaults)  
+-------------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	clear:left;
+}
+
+h1{
+	font-family:'Category Title Font Italic';
+	font-size:250%;
+	color:#fff;
+	font-style:italic;
+}
+
+h2{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:160%;
+	color:#49255d;
+}
+h5{
+	font-size:130%;
+	color:#494844;
+}
+h6{
+	font-size:110%;
+	color:#6b3787;
+}
+
+a{
+	text-decoration:none;
+	color:inherit;
+}
+img { border:0px; }
+
+/** HTML Selectors | Body  
+-------------------------------------------------------------------------------- */
+body{
+	background:#d9d9d9;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	color:rgb(255,255,255);
+	-moz-user-select: none;
+}
+#site-holder-shadow{
+	margin:-300px -510px;
+	padding:10px;
+	width:1000px;
+	height:580px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	background: url(../images/site-bg-shadow.png) no-repeat;
+	visibility: visible;
+}
+
+#site-holder{
+	margin:-291px -500px;
+	width:1000px;
+	height:582px;
+	position:absolute;
+	top:50%;
+	left:50%;
+/*	background: #fff url(../images/site-bg-shadow.png) no-repeat;*/
+	visibility: visible;
+}
+#site-holder{
+	background: url(../images/home-pg-bg.jpg) top repeat-y;
+}
+
+/*--------------------------------------------
+----------------------------------------------
+    -- Home Page Styles --
+----------------------------------------------
+--------------------------------------------*/
+.home-outer-bg{
+	bckground-color:#fff;
+}
+.inner-outer-bg{
+	background-color:#351946;
+}
+
+#site-holder.home #logo{
+	position:absolute;
+	top:50px;
+	width:280px;
+	height:100px;
+}
+#site-holder.home #main-nav{
+	width:190px;
+	height:410px;
+	top:190px;
+	left:100px;
+	position:absolute;
+	z-index:88;
+/*	background-color:#006699;*/
+}
+
+/*----------------------------------------------
+    -- Home Page - Main menu - Styles --
+----------------------------------------------*/
+/*-- Main menu style starts --*/
+#site-holder.home #main-nav ul {			/*-- 1st Level Menu Set --*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width:190px;
+}
+#site-holder.home #main-nav ul li {			/*-- 1st Level Menu - Links --*/
+	font: normal 12px/16px Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	background:url(../images/pink-vert-line.gif) repeat-x bottom;
+	position: relative;
+	float:left;
+	width:100%;
+	z-index:100;
+}
+#site-holder.home #main-nav ul li a, a:visited{		/*-- 1st Level Menu Link --*/
+	margin:0;
+	font-size:100%;
+	color:#fff;
+	display:block;
+	padding: 5px 3px;
+	text-decoration:none;
+}
+#site-holder.home #main-nav ul li a:hover {	/*-- 1st Level Menu Link Hover --*/
+	color:#fff;
+	background:#65357f;
+	text-decoration:none;
+}
+#site-holder.home #main-nav ul li:hover ul{	/*-- 2nd Level Menu Set --*/
+	display: block;
+	left:190px;
+}
+#site-holder.home #main-nav ul ul {			/*-- 2nd Level Menu Set --*/
+	position: absolute;
+	top: 0;
+	display:none;
+}
+#site-holder.home #main-nav ul li ul{		/*-- 2nd Level Menu Set --*/
+	border:thin solid #795b88;
+}
+#site-holder.home #main-nav ul li ul li{ 	/*-- 2nd Level Menu Link --*/
+/*	background:#6b3787;*/
+	background:#65357f url(../images/pink-vert-line.gif) repeat-x bottom;
+}
+#site-holder.home #main-nav ul li ul li a { 	/*-- 2nd Level Menu Link --*/
+/*	background: #ffedd3;
+	border-left:1px solid #fff;
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;*/
+}
+#site-holder.home #main-nav ul li ul li a:visited { 	/*-- 2nd Level Menu Link --*/
+}
+
+#site-holder.home #main-nav ul li ul li a:hover{ 	/*-- 2nd Level Menu Link Hover --*/
+	color:#fff;
+	background:#452158 url(../images/pink-vert-line.gif) repeat-x bottom;
+}
+
+/*-- Main menu style ends --*/
+
+
+#site-holder.home #group-logo{
+	position:absolute;
+	width:190px;
+	height:53px;
+	bottom:20px;
+	left:100px;
+	z-index:100;
+}
+#site-holder.home #social-nav{
+	position:absolute;
+	left:20px;
+	bottom:20px;
+	width:80px;
+	height:26px;
+}
+#site-holder.home #social-nav img{
+	margin-right:5px;
+}
+#site-holder.home #top-nav{
+	position:absolute;
+	top:20px;
+	right:20px;
+	height:16px;
+/*	width:420px;
+	background-color:#CCFF33;*/
+}
+#site-holder.home #top-nav ul{
+	list-style:none;
+	font-size:75%;
+	text-align:right;
+}
+#site-holder.home #top-nav ul li{
+	margin-left:12px;
+	display:block;
+	float:left;
+}
+#site-holder.home #top-nav ul a:link {
+	color:#ccc;
+	text-decoration:none;
+	cursor:pointer;
+}
+#site-holder.home #top-nav ul a:visited {
+	font-size:100%; /* For IE */
+	margin:0; /* For IE */
+	color:#ccc;
+	text-decoration:none;
+	cursor:pointer;
+}
+#site-holder.home #top-nav ul a:hover{
+	color:#fff;
+/*	color:#ba3dff;*/
+}
+
+/*----------------------------------------------
+    -- Home Page - Content Area - Styles --
+----------------------------------------------*/
+/*#site-holder.home img { border:0px; }*/
+#site-holder.home #bigimgnav1{
+	position:absolute;
+	width:324px;
+	height:154px;
+	top:62px;
+	left:180px;
+	background-color:#6b4281;
+}
+
+#site-holder.home #bigimgnav2{
+	position:absolute;
+	width:324px;
+	height:154px;
+	top:62px;
+	right:150px;
+	background-color:#6b4281;
+}
+#site-holder.home #bigimgnav3{
+	position:absolute;
+	width:324px;
+	height:154px;
+	top:235px;
+	left:180px;
+	background-color:#6b4281;
+}
+#site-holder.home #bigimgnav4{
+	position:absolute;
+	width:324px;
+	height:154px;
+	top:235px;
+	right:150px;
+	background-color:#6b4281;
+}
+#site-holder.home #bigimgnav5{
+	position:absolute;
+	width:324px;
+	height:154px;
+	bottom:20px;
+	left:180px;
+	background-color:#6b4281;
+}
+#site-holder.home #bigimgnav6{
+	position:absolute;
+	width:324px;
+	height:154px;
+	bottom:20px;
+	right:150px;
+	background-color:#6b4281;
+}
+ul.img_list {
+	display:inline;
+	float:left;
+	height:154px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}	
+			
+#site-holder.home li.image_1 a, li.image_2 a, li.image_3 a, li.image_4 a, li.image_5 a, li.image_6 a {
+	display:block; 
+	width:324px; 
+	height:154px; 
+	position:relative;
+}	
+		
+#site-holder.home li.image_1 a .rollover, #site-holder.home li.image_2 a .rollover, #site-holder.home li.image_3 a .rollover, #site-holder.home li.image_4 a .rollover, #site-holder.home li.image_5 a .rollover, #site-holder.home li.image_6 a .rollover {
+	display:block; 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	width:324px; 
+	height:154px; 
+}
+#site-holder.home li.image_1 a .rollover {
+	background:url(../images/home-big-imgs-01-on.png);
+}	
+#site-holder.home li.image_2 a .rollover {
+	background:url(../images/home-big-imgs-02-on.png);
+}
+#site-holder.home li.image_3 a .rollover {
+	background:url(../images/home-big-imgs-03-on.png);
+}
+#site-holder.home li.image_4 a .rollover {
+	background:url(../images/home-big-imgs-04-on.png);
+}	
+#site-holder.home li.image_5 a .rollover {
+	background:url(../images/home-big-imgs-05-on.png);
+}
+#site-holder.home li.image_6 a .rollover {
+	background:url(../images/home-big-imgs-06-on.png);
+}
+
+
+/*--------------------------------------------
+----------------------------------------------
+    -- Inner Pages Styles --
+----------------------------------------------
+--------------------------------------------*/
+
+/*-- Inner Page (2 Column) Design Styles --*/
+#site-holder.inner .leftcol{
+	width:270px;
+	height:582px;
+	background-color:#fff;
+	float:left;
+}
+#site-holder.inner #logo{
+	position:absolute;
+	top:42px;
+	left:20px;
+	width:280px;
+	height:100px;
+}
+#site-holder.inner #main-nav{
+	width:230px;
+	height:320px;
+	top:170px;
+	left:20px;
+	position:absolute;
+	z-index:88;
+/*	background-color:#006699;*/
+}
+
+/*-- Main menu style starts --*/
+#site-holder.inner #main-nav ul {			/*-- 1st Level Menu Set --*/
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width:230px;
+}
+#site-holder.inner #main-nav ul li {			/*-- 1st Level Menu - Links --*/
+	font: normal 12px/16px Arial, Helvetica, sans-serif;
+	text-transform:capitalize;
+	background:url(../images/grey-vert-line.gif) repeat-x bottom;
+	position: relative;
+	float:left;
+	width:100%;
+}
+#site-holder.inner #main-nav ul li a, a:visited{		/*-- 1st Level Menu Link --*/
+	margin:0;
+	color:#552b6d;
+	display:block;
+	font-size:100%; /*-- for IE fix --*/
+	padding: 5px 3px;
+	text-decoration:none;
+}
+#site-holder.inner #main-nav ul li a:hover {	/*-- 1st Level Menu Link Hover --*/
+	color:#fff;
+	font-size:100%; /*-- for IE fix --*/
+	background:#65357f;
+	text-decoration:none;
+}
+#site-holder.inner #main-nav ul li:hover ul{	/*-- 2nd Level Menu Set --*/
+	display: block;
+	left:230px;
+}
+#site-holder.inner #main-nav ul ul {			/*-- 2nd Level Menu Set --*/
+	position: absolute;
+	top: 0;
+	display:none;
+}
+#site-holder.inner #main-nav ul li ul{		/*-- 2nd Level Menu Set --*/
+	border:thin solid #795b88;
+}
+#site-holder.inner #main-nav ul li ul li{ 	/*-- 2nd Level Menu Link --*/
+	background:#65357f url(../images/pink-vert-line.gif) repeat-x bottom;
+}
+#site-holder.inner #main-nav ul li ul li a{ 	/*-- 2nd Level Menu Link --*/
+	color:#fff;
+/*	background: #ffedd3;
+	border-left:1px solid #fff;
+	border-right:1px solid #ddd;
+	border-left:1px solid #ddd;*/
+}
+
+#site-holder.inner #main-nav ul li ul li a:hover{ 	/*-- 2nd Level Menu Link Hover --*/
+	color:#fff;
+	background:#452158 url(../images/pink-vert-line.gif) repeat-x bottom;
+}
+/*-- Main menu style ends --*/
+
+#site-holder.inner #social-nav{
+	position:absolute;
+	left:20px;
+	bottom:40px;
+	width:80px;
+	height:26px;
+}
+#site-holder.inner #social-nav img{
+	margin-right:5px;
+}
+#site-holder.inner #bot-nav{
+	position:absolute;
+	bottom:0;
+	left:20px;
+	height:17px;
+	width:230px;
+	margin:0px;
+	padding:4px 0 0 0;
+	background-color:#cdc09e;
+	text-align:center;
+	font-size:70%;
+}
+#site-holder.inner #bot-nav ul{
+	padding:0 37px;
+	display:block;
+}
+#site-holder.inner #bot-nav ul li{
+	list-style-type:none;
+	display:block;
+	float:left;
+}
+#site-holder.inner #bot-nav ul li a:link, a:visited{
+	text-decoration:none;
+	color:#533d5d;
+	cursor:pointer;
+	padding:0; /*- IE Fix -*/
+}
+#site-holder.inner #bot-nav ul li a:hover {
+	text-decoration:none;
+	color:#101010;
+	cursor:pointer;
+}
+#site-holder.inner #bot-nav ul li .divider{
+	margin:0 6px;
+	color:#fff;
+}
+
+/*--------------------------------------------
+    -- Rightside Column Styles --
+--------------------------------------------*/
+#site-holder.inner #rightcol{
+	width:710px;
+	height:582px;
+/*	background-color:#33FFFF;*/
+	float:right;
+}
+
+#site-holder.inner #rightcol #category-title{
+	position:absolute;
+	top:54px;
+	left:310px;
+/*	width:150px;
+	height:60px;
+	background-color:#cdc09e;*/
+}
+
+#site-holder.inner #rightcol #category-title h1{
+	line-height:90%;
+}
+
+#site-holder.inner #rightcol #category-title .darker{
+	color:#5a2e71;
+}
+#site-holder.inner #rightcol .lighter{
+	color:#fff;
+}
+
+/*--------------------------------------------
+    -- Merged (2 and 3) Column Styles --
+--------------------------------------------*/
+
+#site-holder.inner #rightcol #mergedcol #page-title{ 	/*-- Page Title */
+	position:absolute;
+	top:120px;
+	left:310px;
+}
+#site-holder.inner #rightcol #mergedcol #gallery-page-title{ 	/*-- Gallery Page Title */
+	position:absolute;
+	top:104px;
+	right:20px;
+	text-align:right;
+}
+#site-holder.inner #rightcol #mergedcol #gallery-page-title>p{ 	/*-- Gallery Page Title */
+	margin:0 0 5px 0;
+	color:#fff;
+	font-size:80%;
+}
+#site-holder.inner #rightcol #mergedcol #gallery-page-title>p+p{ 	/*-- Gallery Page Title */
+	font-size:80%;
+	color:#aaa;
+}
+
+#site-holder.inner #rightcol #mergedcol #content{
+	width:710px;
+	height:582px;
+/*	background-color:#cdc09e;*/
+	float:right;
+}
+#site-holder.inner #rightcol #mergedcol #content .cont-scrl{
+	width:670px;
+	height:400px;
+	position:absolute;
+	left:310px;
+	bottom:20px;
+	font: normal 12px/18px Arial, Helvetica, sans-serif;
+/*	background-color:#CCCC00;*/
+}
+
+#site-holder.inner #rightcol #mergedcol #content h6+img{
+	margin:6px 10px 0px 0;
+}
+
+#site-holder.inner #rightcol #company-logos{
+	width:100%;
+}
+
+#site-holder.inner #rightcol #company-logos .imgbox{
+	margin:5px 8px 5px 0;
+	width:100px;
+	height:75px;
+	background-color:#fff;
+	border:#d7d7d7 thin solid;
+}
+
+#site-holder.inner #rightcol #company-logos img{
+	padding:5px 10px;
+}
+#site-holder.inner #rightcol #gallery-thumbs .main-pg-thumb{ 		/*-- Gallery (main) thumb */
+	padding:10px 5px 50px 5px;
+	width:200px;
+	height:110px;
+	text-align:center;
+	float:left;
+/*	background-color:#00FFCC;
+	border:#CCFF00 thin dotted;*/
+}
+
+#site-holder.inner #rightcol #gallery-thumbs .main-pg-thumb>a, #site-holder.inner #rightcol #gallery-thumbs .main-pg-thumb>a>p{
+	margin:0 auto;
+	width:120px;
+	color:#fff;
+	text-align:center;
+}
+
+#site-holder.inner #rightcol #gallery-thumbs .main-pg-thumb>a>img{
+	margin:0 auto;
+	padding:0 50px 10px 50px;
+/*	background-color:#00FFCC;
+	float:left;*/
+}
+#site-holder.inner #rightcol #gallery-thumbs img.gal-thumb{ 	/*-- Gallery (inner) thumb */
+	margin:0;
+	padding:5px 30px 30px 0;
+}
+
+/*------------------------------
+    -- 3rd Column Styles --
+------------------------------*/
+
+#site-holder.inner #rightcol #lastcol #page-title{ 	/*-- Page Title */
+	position:absolute;
+	top:62px;
+	left:650px;
+}
+
+#site-holder.inner #rightcol #lastcol #page-title .small-title{
+	font-size:65%;
+	font-weight:normal;
+/*	color:#fff;*/
+}
+
+#site-holder.inner #rightcol #lastcol #content{
+	width:375px;
+	height:582px;
+/*	background-color:#cdc09e;*/
+	float:right;
+}
+
+#site-holder.inner #rightcol #lastcol #content .cont-scrl{
+	width:330px;
+	height:440px;
+	position:absolute;
+	left:650px;
+	bottom:20px;
+	font: normal 12px/18px Arial, Helvetica, sans-serif;
+}
+
+/*--------------------------------------------
+    -- Rightside Column :: Common Styles --
+--------------------------------------------*/
+
+/*-- Inner Page (3rd Column) Design Styles --*/
+
+#site-holder.inner #rightcol a{
+	color:#555;
+	border-bottom:thin dotted;
+}
+
+#site-holder.inner #rightcol a:hover{
+	color:#49255d;
+	border-bottom:none;
+}
+
+#site-holder.inner #rightcol img{
+	float:left;
+}
+
+#site-holder.inner #rightcol h5, h6{
+	font-weight:bold;
+}
+#site-holder.inner #rightcol h5+h6{
+	margin-top:20px;;
+}
+
+#site-holder.inner #rightcol #content img{
+	margin:0 0 20px 0;
+}
+#site-holder.inner #rightcol #content .cont-scrl p{
+	margin:0 0 15px 0;
+	color:#252525;
+	text-align:justify;
+}
+
+#site-holder.inner #rightcol #content .cont-scrl h6+p{
+/*font-size:90%;*/
+}
+
+/*#site-holder.inner #rightcol #content .cont-scrl p+p{
+	margin:0 0 15px 0;
+	padding:0 0 15px 0;
+
+}*/
+
+#site-holder.inner #rightcol #content .cont-scrl ul{
+	margin:0 0 20px 0;
+	list-style-position:outside;
+	list-style:disc;
+}
+
+#site-holder.inner #rightcol #content .cont-scrl ol{
+	margin:0 0 20px 0;
+	list-style-position:outside;
+}
+#site-holder.inner #rightcol #content .cont-scrl ol>ul{
+	margin:0 0 10px 30px;
+	list-style-position:inside;
+	list-style:lower-alpha;
+}
+#site-holder.inner #rightcol #content .cont-scrl ul li, #site-holder.inner #rightcol #content .cont-scrl ol li{
+	color:#333333;
+	margin-left:20px;
+	text-align:justify;
+/*	background-color:#00CC66;*/
+}
+#site-holder.inner #rightcol #content .cont-scrl ul>li+ul>li{
+	color:#333333;
+	margin-left:40px;
+	text-align:justify;
+/*	background-color:#00CC66;*/
+}
+#site-holder.inner #rightcol #content p:last-of-type{
+	margin-bottom:0;
+}
+ul.gaped-list1 li{
+	margin:0 0 20px 0;
+}
+ul.gaped-list2 li{
+	margin:0 0 10px 0;
+}
+ul.gaped-list1 li{
+	margin:0 0 20px 0;
+}
+ul.gaped-list3 li{
+	margin:0 0 6px 0;
+}
+
+ul li.subtitle{
+	list-style:none;
+	font-weight:bold;
+	margin:0 0 0 -40px;
+	display:block;
+}
+table .whitetxt-center{
+	color:#fff; 
+	text-align:center;
+}
+/*table th.drkgreybg1{
+	background-color:#fff;
+}*/
+.highlight{
+	padding:15px;
+	background-color:#f6ebcd;
+}
+
+/*--------------------------------------------
+    -- Background Color Styles --
+--------------------------------------------*/
+
+/*-- Background Colours -- */
+.sandal1{
+background-color:#cdc09e;
+}
+.sandal2{
+background-color:#ded5bf;
+}
+.sandal-bot-border{
+padding-bottom:15px;
+border-bottom:#f9f2e1 thin dotted;
+}
+.light-grey{
+background-color:#E4E4E4;
+}
+.light-blue{
+background-color:#f5f4ff;
+}
+.gallery{
+background:url(../images/home-pg-bg.jpg) repeat-y;
+}
+
+
+/*--------------------------------------------
+    -- Text Color Styles --
+--------------------------------------------*/
+.pink{color:#6b3787;}
+.bold{
+	font-weight:bold;
+}
+
+/*--------------------------------------------
+    -- Quick Link Styles --
+--------------------------------------------*/
+
+/*-- Quick Links --*/
+#quick-links{
+position:absolute;
+top:20px;
+/*left:650px;*/
+right:20px;
+font-size:75%;
+}
+#quick-links p{
+color:#000;
+margin-right:10px;
+float:left;
+}
+#quick-links form{
+float:left;
+}
+#quick-links form select{
+width:220px;
+height:20px;
+color:#404040;
+font-size:100%;
+border:#a089ad thin ridge;
+background-color:#fff;
+}
+#quick-links form select option{
+padding:2px 0 0 3px;
+height:18px;
+}
+#quick-links form select option.sub1{
+	padding-left:20px;
+}
+#quick-links form select option.sub2{
+	padding-left:40px;
+}
+
+/*--------------------------------------------
+    -- Table Styles --
+--------------------------------------------*/
+
+/*---- Short 2 Column Table ---------------------*/
+table.short-2col {
+	margin:10px 0;
+	width: 100%;
+	border-collapse: collapse;
+	color:#555;
+}
+/* Zebra striping */
+table.short-2col tr:nth-of-type(odd) { 
+	background: #eee; 
+}
+table.short-2col tr th { 
+	background: #888; 
+	color: white; 
+	font-weight: bold; 
+}
+table.short-2col td, th { 
+	padding: 6px; 
+	border: 1px solid #ccc;
+	text-align: left;
+	vertical-align:top;
+}
+table.short-2col td img{
+	padding:5px;
+}
+table td .title{
+	font-weight:bold;
+	color:#006699;
+}
+#content .cont-scrl table:last-of-type { 
+	margin-bottom: 0; 
+}
+#content .cont-scrl ul:last-of-type { 
+	margin-bottom:0; 
+}
+/*---- Table - For Sandal Color (Bg) Pages ---------------------*/
+
+table.drksnd {
+	margin:10px 0;
+	width: 100%;
+	border-collapse: collapse;
+	color:#555;
+	background-color:#d0c19b;
+}
+/* Zebra striping */
+table.drksnd tr:nth-of-type(odd) { 
+	background: #d8ccaf; 
+}
+table.drksnd tr th { 
+	background: #857e6c; 
+	color:#fcde65; 
+	font-weight: bold; 
+}
+table.drksnd td .title { 
+	color:#8d6518; 
+	font-weight: bold; 
+}
+table.drksnd td, table.drksnd th { 
+	padding: 6px; 
+	border: 1px solid #b4a888;
+	text-align: left;
+	vertical-align:top;
+}
+table.drksnd td img{
+	padding:5px;
+}
+/*table .drksnd th{
+	font-weight:bold;
+	color:#006699;
+}*/
+
+/*---- Table - For Light Blue Color (Bg) Pages ---------------------*/
+
+table.drkblu {
+	margin:10px 0;
+	width: 100%;
+	border-collapse: collapse;
+	color:#555;
+	background-color:#e2e0f3;
+}
+/* Zebra striping */
+table.drkblu tr:nth-of-type(odd) { 
+	background: #d2cfed; 
+}
+table.drkblu tr th { 
+	background: #9691bc; 
+	color:#fff; 
+	font-weight: bold; 
+}
+table.drkblu td.title { 
+	color:#50468d; 
+	font-weight: bold; 
+}
+table.drkblu td, table.drkblu th { 
+	padding: 6px; 
+	border: 1px solid #bdbad9;
+	text-align: left;
+	vertical-align:top;
+}
+/*table.drksnd td img{
+	padding:5px;
+}*/
+
+
